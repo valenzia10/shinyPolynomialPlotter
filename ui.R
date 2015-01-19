@@ -16,7 +16,7 @@ shinyUI(pageWithSidebar(
     submitButton('Plot')
   ),
   mainPanel(
-    p('After setting the coefficients, a plot of the corresponding polynomial will appear below over the data range from -100 to 100'),
+    p('After setting the coefficients, a plot of the corresponding polynomial will appear below over the data range from -10 to 10'),
     plotOutput("polyPlot")
   )
 ))
