@@ -12,11 +12,11 @@ shinyUI(pageWithSidebar(
     numericInput('id3','$\\alpha_3 \\cdot x^3$',0,min=0,max=20,step=0.1),
     numericInput('id2','$\\alpha_2 \\cdot x^2$',0,min=0,max=20,step=0.1),
     numericInput('id1','$\\alpha_1 \\cdot x^1$',0,min=0,max=20,step=0.1),
-    numericInput('id0','$\\alpha_0$',0,min=0,max=20,step=0.1),
+    numericInput('id0','$\\alpha_0$',0,min=0,max=200,step=0.1),
     submitButton('Plot')
   ),
   mainPanel(
-    p('After setting the coefficients, a plot of the corresponding polynomial will appear below over the data range from -10 to 10'),
+    p('After setting the coefficients, a plot of the corresponding polynomial over the data range from -10 to 10 will appear below:'),
     plotOutput("polyPlot")
   )
 ))
